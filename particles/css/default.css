@@ -13,7 +13,7 @@
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 15px; padding: 0; margin: 0;}
+body, html { font-size: 100%; padding: 0; margin: 0;}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -21,35 +21,28 @@ body, html { font-size: 15px; padding: 0; margin: 0;}
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #89867e;
-	background: #f9f9f9;
+	color: #fff;
+	background: #f8d135;
 }
 
 a {
-	color: #333;
+	color: #888;
 	text-decoration: none;
 }
 
-a:hover {
-	color: #fff;
+a:hover,
+a:active {
+	color: #333;
 }
 
-.main,
+/* Header Style */
 .container > header {
-	width: 100%;
 	margin: 0 auto;
 	padding: 2em;
 }
 
-.main {
-	max-width: 82.667em;
-	min-height: 40em;
-}
-
 .container > header {
 	text-align: center;
-	font-size: 16px;
-	padding: 4em 2em 3em;
 	background: rgba(0,0,0,0.01);
 }
 
@@ -63,30 +56,30 @@ a:hover {
 .container > header span {
 	display: block;
 	font-size: 60%;
-	color: #ceccc6;
+	opacity: 0.8;
 	padding: 0 0 0.6em 0.1em;
 }
 
-/* Header Style */
+/* To Navigation Style */
 .codrops-top {
 	background: #fff;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.1);
 	text-transform: uppercase;
-	position: relative;
 	width: 100%;
-	font-size: 0.7em;
+	font-size: 0.69em;
 	line-height: 2.2;
 }
 
 .codrops-top a {
 	padding: 0 1em;
 	letter-spacing: 0.1em;
-	color: #888;
+	color: #c5a00a;
 	display: inline-block;
 }
 
 .codrops-top a:hover {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.95);
+	color: #333;
 }
 
 .codrops-top span.right {
@@ -109,28 +102,19 @@ a:hover {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
+
 .codrops-icon-drop:before {
 	content: "\e001";
 }
+
 .codrops-icon-prev:before {
 	content: "\e004";
 }
-.codrops-icon-archive:before {
-	content: "\e002";
-}
-.codrops-icon-next:before {
-	content: "\e000";
-}
-.codrops-icon-about:before {
-	content: "\e003";
-}
 
-@media screen and (max-width: 25em) { 
+@media screen and (max-width: 25em) {
+
 	.codrops-icon span {
 		display: none;
 	}
-	.container > header {
-		font-size: 75%;
-	}
-}
 
+}
