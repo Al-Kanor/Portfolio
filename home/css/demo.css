@@ -68,8 +68,9 @@ a:hover, a:focus {
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.69em;
+	font-size: 1.12em;
 	line-height: 2.2;
+	padding: 20px;
 }
 
 .codrops-top a {
