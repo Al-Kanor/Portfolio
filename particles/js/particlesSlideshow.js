@@ -60,7 +60,7 @@ var self = window;
 		canvas = document.createElement('canvas');
 					
         canvas.width = innerWidth;
-		canvas.height = 200;
+		canvas.height = 100;
 		
         slideshowContainer.appendChild(canvas);
 
@@ -115,7 +115,7 @@ var self = window;
 	function onResize() {
 	
 		canvas.width = window.innerWidth;
-		canvas.height = 200;
+		canvas.height = 100;
 		
 		// Reset the text particles, and align again on the center of screen
 		nextText = [];
@@ -327,7 +327,7 @@ var self = window;
 				maxAlpha: 0.7 + Math.random() * 0.4,
 				
 				radius: radius,
-				maxRadius: 10,
+				maxRadius: 8,
 				
 				color: color,
 				interactive: false
@@ -353,7 +353,7 @@ var self = window;
 		
 		var strip = words[layout].toUpperCase().split('').join(String.fromCharCode(8202));
 		
-		context.fillText(strip, canvas.width * 0.5, canvas.height - 50);
+		context.fillText(strip, canvas.width * 0.5, canvas.height - 10);
 		
 		var surface = context.getImageData(0, 0, canvas.width, canvas.height);
 				
@@ -401,8 +401,8 @@ var self = window;
 			
 				case 'circle':
 				
-					shape.x = canvas.width * 0.5 + 140 * Math.sin(particle.steps);
-					shape.y = 180 + 140 * Math.cos(particle.steps);
+					shape.x = canvas.width * 0.5 + 400 * Math.sin(particle.steps);
+					shape.y = 56 + 24 * Math.cos(particle.steps);
 					
 					break;
 					
