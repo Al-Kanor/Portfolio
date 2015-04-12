@@ -36,7 +36,7 @@ var self = window;
 		 * List words.
 		 */
 		
-		words = [ 'prog-man', 'ovals', 'drop', 'ribbon' ],
+		words = [ 'off-man', 'ovals', 'drop', 'ribbon' ],
 		
 		/*
 		 * List colors.
